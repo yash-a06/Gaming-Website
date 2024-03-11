@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Warrior</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="Stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="flex">
+                <div class="logo">
+                    <a href="#"><img src="https://onclickwebdesign.com/wp-content/uploads/footer_logo.png" alt="Game Warrior Logo" /></a>
+                </div>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+                    <ul id="nav-menu-container">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="login form gui.html" id="login-register-button" >Login / Register</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero-image">
+                <div class="hero-marketing-text">
+                    <h1>Life is more <span>Fun</span> if you play<span> Games.</span></h1>
+                    <h3>― Roald Dahl, My Uncle Oswald</h3>
+                    <h5> </h5>
+                    <p >"How many are there in you? Whose hopes and dreams do you encompass? Could you but see the eyes in your own, the minds in your mind, you would see how much we share."<span id="dots">...</span><span id="more">A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool. Many games are also considered to be work (such as professional players of spectator sports or games).</span></p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                        
+                        <script>
+                        function myFunction() {
+                          var dots = document.getElementById("dots");
+                          var moreText = document.getElementById("more");
+                          var btnText = document.getElementById("myBtn");
+                        
+                          if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more"; 
+                            moreText.style.display = "none";
+                          } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less"; 
+                            moreText.style.display = "inline";
+                          }
+                        }
+                        </script>
+                
+                </div>
+            </section>
+
+            <section id="latest-news">
+                <div class="flex">
+                    <h5>Latest News</h5>
+                    <div id="latest-news-container">
+                        <div class="latest-news-item">
+                            <span class="badge new">New</span>
+                            <span class="latest-news-text"><b>Call of Duty:</b> Modern Warfare 3 Players Think AI Bots Are Being Used in Matches.<span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="game-types-boxes">
+                <div class="flex">
+                    <div class="box new">
+                        <div class="shade"></div>
+                        <span class="badge new">New</span>
+                        <div class="contents">
+                            <h4>Car Race Pro</h4>
+                            <p>You can compete against virtual racing champions and real players from around the world.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box strategy">
+                        <div class="shade"></div>
+                        <span class="badge strategy">New</span>
+                        <div class="contents">
+                            <h4>Roblox</h4>
+                            <p>Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box rpg">
+                        <div class="shade"></div>
+                        <span class="badge rpg">New</span>
+                        <div class="contents">
+                            <h4>Fortnite</h4>
+                            <p>Fortnite is a third-person shooter game where up to 100 players compete to be the last person or team standing.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box racing">
+                        <div class="shade"></div>
+                        <span class="badge racing">New</span>
+                        <div class="contents">
+                            <h4>Minecraft</h4>
+                            <p>Play Minecraft Legends’ biggest update! Hop into action with the fearless frog and lead the enigmatic witches to face the petrifying clanger piglin and the gusty air choppe</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recent-games">
+                <h1>Recent Games</h1>
+                <div class="flex">
+                    <div class="box">
+                        <span class="badge new">New</span>
+                        <img src="tdb.jpg" />
+                        <div class="box-lower-section">
+                            <h4>The Day Before</h4>
+                            <p>The Day Before is an upcoming multiplayer open world survival horror video game developed by Fntastic and published by Mytona.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge racing">Racing</span>
+                        <img src="aw2.jpeg" />
+                        <div class="box-lower-section">
+                            <h4>Alan Wake 2</h4>
+                            <p>Alan Wake 2 is a 2023 survival horror game developed by Remedy Entertainment and published by Epic Games Publishing</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge adventure">Adventure</span>
+                        <img src="avtar.avif" />
+                        <div class="box-lower-section">
+                            <h4>Avatar: Frontiers of Pandora</h4>
+                            <p>Avatar: Frontiers of Pandora is an upcoming open world action-adventure game based on the Avatar film series developed by Massive Entertainment and published by Ubisoft.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tournaments">
+                <div class="flex">
+                    <span class="badge tournaments">Tournaments</span>
+                    <div class="box">
+                        <span class="badge premium-tournament">Premium Tournament</span>
+                        <div class="tournaments-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/tournaments_1.jpg" />
+                        </div>
+                        <div class="tournaments-content">
+                            <h3>Starcraft 2</h3>
+                            <div><label>Tournament Begins:</label> <strong>June 20, 2019</strong></div>
+                            <div><label>Tournament Ends:</label> <strong>July 01, 2019</strong></div>
+                            <div><label>Participants:</label> <strong>10 teams</strong></div>
+                            <div><label>Tournament Organizer:</label> <strong>Admin</strong></div>
+                            <div><label class="prizes">Prizes:</label> <label>1st place 20000 Rs, 2nd place: 10000 Rs, 3rd place: 5000 Rs</label></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge premium-tournament">Premium Tournament</span>
+                        <div class="tournaments-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/tournaments_2.jpg" />
+                        </div>
+                        <div class="tournaments-content">
+                            <h3>World Of Warcraft</h3>
+                            <div><label>Tournament Begins:</label> <strong>June 20, 2019</strong></div>
+                            <div><label>Tournament Ends:</label> <strong>July 01, 2019</strong></div>
+                            <div><label>Participants:</label> <strong>10 teams</strong></div>
+                            <div><label>Tournament Organizer:</label> <strong>Admin</strong></div>
+                            <div><label class="prizes">Prizes:</label> <label>1st place 15000 Rs, 2nd place: 10000 Rs, 3rd place: 5000 Rs</label></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recent-reviews">
+                <h1>Recent Reviews</h1>
+                <div class="flex">
+                    <div class="box">
+                        <span class="rating-badge gold">9.3</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_1.jpg" />
+                        </div>
+                        <div>
+                            <h4>Assasin's Creed</h4>
+                            <p>Play your way through history in the award-winning video game series.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge purple">9.5</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_2.jpg" />
+                        </div>
+                        <div>
+                            <h4>Doom</h4>
+                            <p>Doom (stylized as DOOM) is an American media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge green">9.1</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_3.jpg" />
+                        </div>
+                        <div>
+                            <h4>Overwatch</h4>
+                            <p>Overwatch was a 2016 team-based multiplayer first-person shooter game by Blizzard Entertainment.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge violet">9.7</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_4.jpg" />
+                        </div>
+                        <div>
+                            <h4>GTA</h4>
+                            <p>Grand Theft Auto V and GTA Online — now upgraded for PlayStation 5 and Xbox Series X|S with stunning visuals, faster loading.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="posts-comments">
+                <div class="flex">
+                    <div class="game-warrior">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/footer_logo.png" />
+                        <p>A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.</p>
+                        <img class="footer-graphic" src="footbg.png" />
+                    </div>
+
+                    <div class="posts-comments-box">
+                        <h3>Latest Posts</h3>
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_1.jpg" />
+                            <div>
+                                <h5>July 13, 2023</h5>
+                                <p>PUBG: BATTLEGROUNDS is a battle royale that pits 100 players against each other.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_2.jpg" />
+                            <div>
+                                <h5>Sep 21, 2023</h5>
+                                <p>Dead Triggered 2 is a zombie-themed first person survival horror video game was developed and published by Madfinger Game</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_3.jpg" />
+                            <div>
+                                <h5>Oct 25, 2023</h5>
+                                <p>Modern World of Warcraft is free to play up to level 20. You need Game Time or a Subscription.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="posts-comments-box">
+                        <h3>Top Comments</h3>
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_1.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Outstanding game for gamers</p>
+                                <h5>Jan 28, 2023</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_2.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Smooth responsiveness</p>
+                                <h5>Aug 5, 2023</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_3.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Very Nice Game</p>
+                                <h5>May 9, 2023</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_4.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Unbelievable Graphics</p>
+                                <h5>Feb 16, 2023</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="flex">
+                <small>Play Game &copy; 2023 Game Warrior<span class="footer-heart">&#9829;</span> by <a href="login form gui.html" target="_blank">YASH SISODIYA</a>.</small>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Games</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Forums</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function () {
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            });
+        </script>
+    </body>
+</html>
